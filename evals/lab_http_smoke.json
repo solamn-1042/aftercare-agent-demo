@@ -1,0 +1,18 @@
+{
+  "health": 200,
+  "unauthorized": 401,
+  "cross_owner": 409,
+  "confirm": {
+    "status": "SUCCEEDED",
+    "ticket_id": "T-1e0dca3137d3",
+    "replayed": false,
+    "action_id": "57a77119b027458f8da478a2a11183da"
+  },
+  "replay": {
+    "status": "SUCCEEDED",
+    "ticket_id": "T-1e0dca3137d3",
+    "replayed": true,
+    "action_id": "57a77119b027458f8da478a2a11183da"
+  },
+  "request_id": "432e00d33cad402e994582da6e48faa0"
+}

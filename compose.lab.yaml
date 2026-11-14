@@ -1,0 +1,20 @@
+services:
+  workbench:
+    build:
+      context: .
+      dockerfile: Dockerfile.lab
+    ports: ["127.0.0.1:8001:8001"]
+    env_file: .env
+    volumes: ["case-data:/data"]
+    read_only: true
+    tmpfs: ["/tmp"]
+    cap_drop: ["ALL"]
+    security_opt: ["no-new-privileges:true"]
+    mem_limit: 512m
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request;urllib.request.urlopen('http://127.0.0.1:8001/health/ready',timeout=3)"]
+      interval: 20s
+      timeout: 5s
+      retries: 3
+volumes:
+  case-data:

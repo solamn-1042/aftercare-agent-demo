@@ -3,6 +3,26 @@ on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
 jobs:
+  case-lab:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-lab.txt
+      - run: python -m unittest discover -s tests -p 'test_lab*.py' -v
+      - run: python -m lab.evaluate
+      - run: docker build -f Dockerfile.lab -t aftercare-lab:ci .
+      - name: Run case lab container and confirm a synthetic ticket
+        run: |
+          docker run -d --name case-lab-ci -p 8001:8001 --read-only --tmpfs /tmp -v case-lab-data:/data -e API_TOKEN=ci-only-token-with-at-least-24-characters aftercare-lab:ci
+          for n in $(seq 1 30); do curl -fsS http://localhost:8001/health/ready && break; sleep 1; done
+          python -m lab.http_smoke --url http://127.0.0.1:8001 --token ci-only-token-with-at-least-24-characters
+      - uses: actions/upload-artifact@v4
+        with:
+          name: case-lab-evaluation
+          path: evals/lab_report.json
   regression:
     runs-on: ubuntu-latest
     steps:

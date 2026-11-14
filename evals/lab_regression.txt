@@ -1,0 +1,63 @@
+test_cache_bound_and_index_version (test_lab.RetrievalTests.test_cache_bound_and_index_version) ... ok
+test_cache_key_accounts_for_scope_and_copies_results (test_lab.RetrievalTests.test_cache_key_accounts_for_scope_and_copies_results) ... ok
+test_internal_exact_match_is_never_exposed (test_lab.RetrievalTests.test_internal_exact_match_is_never_exposed) ... ok
+test_scope_before_ranking (test_lab.RetrievalTests.test_scope_before_ranking) ... ok
+test_audit_does_not_store_description (test_lab.WorkflowTests.test_audit_does_not_store_description) ... ok
+test_cancel_blocks_confirmation (test_lab.WorkflowTests.test_cancel_blocks_confirmation) ... ok
+test_concurrent_confirm_and_multiple_drafts_deduplicate (test_lab.WorkflowTests.test_concurrent_confirm_and_multiple_drafts_deduplicate) ... ok
+test_confirmation_required_and_persisted_resume (test_lab.WorkflowTests.test_confirmation_required_and_persisted_resume) ... ok
+test_expiry_commits_terminal_status (test_lab.WorkflowTests.test_expiry_commits_terminal_status) ... ok
+test_order_revision_changed_requires_reconfirmation (test_lab.WorkflowTests.test_order_revision_changed_requires_reconfirmation) ... ok
+test_outside_window_and_photo_case_do_not_create_draft (test_lab.WorkflowTests.test_outside_window_and_photo_case_do_not_create_draft) ... ok
+test_owner_boundaries_cover_session_order_action_trace (test_lab.WorkflowTests.test_owner_boundaries_cover_session_order_action_trace) ... ok
+test_payload_conflict_is_rejected (test_lab.WorkflowTests.test_payload_conflict_is_rejected) ... ok
+test_policy_version_changed_requires_reconfirmation (test_lab.WorkflowTests.test_policy_version_changed_requires_reconfirmation) ... ok
+test_response_loss_then_recovery_returns_one_ticket (test_lab.WorkflowTests.test_response_loss_then_recovery_returns_one_ticket) ... ok
+test_session_binding_persists_and_is_isolated (test_lab.WorkflowTests.test_session_binding_persists_and_is_isolated) ... ok
+test_draft_is_not_reported_as_submitted (test_lab_agent.AgentTests.test_draft_is_not_reported_as_submitted) ... ok
+test_fake_citation_or_execution_claim_is_rejected (test_lab_agent.AgentTests.test_fake_citation_or_execution_claim_is_rejected) ... ok
+test_model_cannot_override_owner (test_lab_agent.AgentTests.test_model_cannot_override_owner) ... ok
+test_photo_case_does_not_advertise_nonexistent_upload (test_lab_agent.AgentTests.test_photo_case_does_not_advertise_nonexistent_upload) ... ok
+test_repeated_tool_is_stopped_and_calls_bounded (test_lab_agent.AgentTests.test_repeated_tool_is_stopped_and_calls_bounded) ... ok
+test_schema_injection_rejected (test_lab_agent.AgentTests.test_schema_injection_rejected) ... ok
+test_tools_do_not_expose_confirmation (test_lab_agent.AgentTests.test_tools_do_not_expose_confirmation) ... ok
+test_auth_schema_and_identity_injection (test_lab_api.ApiTests.test_auth_schema_and_identity_injection) ... ok
+test_body_limit (test_lab_api.ApiTests.test_body_limit) ... ok
+test_http_demo_complete (test_lab_api.ApiTests.test_http_demo_complete) ... ok
+test_audit_failure_keeps_service_available (test_service.APITests.test_audit_failure_keeps_service_available) ... WARNING:root:audit_write_failed request_id=ef5982b6f9774c0280aac114c17f91ca
+ok
+test_auth_required (test_service.APITests.test_auth_required) ... ok
+test_body_budget (test_service.APITests.test_body_budget) ... ok
+test_busy_requests_are_rejected (test_service.APITests.test_busy_requests_are_rejected) ... ok
+test_empty_and_large_question (test_service.APITests.test_empty_and_large_question) ... ok
+test_health_and_frontend (test_service.APITests.test_health_and_frontend) ... ok
+test_short_token_fails_startup (test_service.APITests.test_short_token_fails_startup) ... ok
+test_trace_and_audit_exclude_question (test_service.APITests.test_trace_and_audit_exclude_question) ... ok
+test_unknown_fields_rejected (test_service.APITests.test_unknown_fields_rejected) ... ok
+test_wrong_auth (test_service.APITests.test_wrong_auth) ... ok
+test_actual_graph_path_and_citation (test_service.WorkflowTests.test_actual_graph_path_and_citation) ... ok
+test_fake_citation_blocked (test_service.WorkflowTests.test_fake_citation_blocked) ... ok
+test_low_similarity_refuses_without_model (test_service.WorkflowTests.test_low_similarity_refuses_without_model) ... ok
+test_model_refusal_not_reported_as_success (test_service.WorkflowTests.test_model_refusal_not_reported_as_success) ... ok
+test_no_citation_blocked (test_service.WorkflowTests.test_no_citation_blocked) ... ok
+test_no_model_is_evidence_only (test_service.WorkflowTests.test_no_model_is_evidence_only) ... ok
+test_provider_failure_sanitized (test_service.WorkflowTests.test_provider_failure_sanitized) ... ok
+test_vector_failure_is_visible_and_refused (test_service.WorkflowTests.test_vector_failure_is_visible_and_refused) ... ok
+test_cross_customer_denied (test_ticket.TicketTests.test_cross_customer_denied) ... ok
+test_customer_cannot_be_overridden (test_ticket.TicketTests.test_customer_cannot_be_overridden) ... ok
+test_fabricated_order_citation_blocked (test_ticket.TicketTests.test_fabricated_order_citation_blocked) ... ok
+test_json_and_types_validated (test_ticket.TicketTests.test_json_and_types_validated) ... ok
+test_missing_indistinguishable_from_forbidden (test_ticket.TicketTests.test_missing_indistinguishable_from_forbidden) ... ok
+test_model_call_budget (test_ticket.TicketTests.test_model_call_budget) ... ok
+test_multiple_tools (test_ticket.TicketTests.test_multiple_tools) ... ok
+test_no_model_claim_without_evidence (test_ticket.TicketTests.test_no_model_claim_without_evidence) ... ok
+test_order_graph (test_ticket.TicketTests.test_order_graph) ... ok
+test_owned_order (test_ticket.TicketTests.test_owned_order) ... ok
+test_placeholder_order_citation_blocked_even_with_valid_policy (test_ticket.TicketTests.test_placeholder_order_citation_blocked_even_with_valid_policy) ... ok
+test_policy_tool_and_citation (test_ticket.TicketTests.test_policy_tool_and_citation) ... ok
+test_unknown_tool (test_ticket.TicketTests.test_unknown_tool) ... ok
+
+----------------------------------------------------------------------
+Ran 57 tests in 1.778s
+
+OK
