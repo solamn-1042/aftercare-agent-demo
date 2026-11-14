@@ -1,5 +1,7 @@
 # Aftercare Agent 售后服务工程 Demo
 
+[![verify](https://github.com/solamn-1042/aftercare-agent-demo/actions/workflows/verify.yml/badge.svg)](https://github.com/solamn-1042/aftercare-agent-demo/actions/workflows/verify.yml)
+
 面向订单状态与售后规则咨询的可部署 Agent 示例。模型通过两个只读工具查询合成订单、检索售后知识；LangGraph 控制模型与工具循环，FastAPI 提供鉴权、并发限制、请求追踪和审计接口。
 
 本项目由已有售后 Agent 学习原型扩展，使用 AI 辅助工程实现与验证。订单和规则均为演示数据，不连接真实商家，不执行退款。它是可审查、可部署的工程 Demo，不声称已在企业生产环境上线。
@@ -103,6 +105,8 @@ DeepSeek `deepseek-v4-flash` 完整 60 题、并发 2 的真实评测：50 条�
 首轮结果保留在 `evals/baseline/agent.json`。修复了占位订单引用未拦截的问题，并收紧模型对查询能力的描述。剩余措辞边界和审核结果见 [评测说明](docs/EVALUATION.md)。本项目没有声称“回答准确率 100%”。
 
 CI 在每次提交执行离线回归和容器构建/真实 Embedding smoke；不依赖模型密钥，也不把模拟模型测试当作真实 LLM 测试。实际 CI 结果应以当前提交的 Actions 状态为准。
+
+发布验收：31项回归在本机与Linux镜像中通过，真实容器返回健康检查200、未授权问答401、授权检索200；只读根文件系统与非root运行均已实际验证，记录见 `evals/container_smoke.json`。首次发布提交 `4ffa9ea7ee89b04166387569d540ad0ce1ed7115` 的 [GitHub Actions](https://github.com/solamn-1042/aftercare-agent-demo/actions/runs/43572705661) 中回归、镜像构建和真实BGE/HTTP检查均通过。
 
 ## 工程边界
 

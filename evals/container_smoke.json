@@ -1,0 +1,83 @@
+{
+  "at_utc": "2026-11-14T07:47:44.281035+00:00",
+  "image": "aftercare-agent:verified",
+  "image_id": "sha256:8c6ada684a6ca57e15be7452b4418bde68ba5b9337768394a2d6c1ab1ce740d5",
+  "runtime": "Linux Docker; non-root; read-only rootfs; all capabilities dropped; no-new-privileges",
+  "ready": {
+    "status": "ready",
+    "model_configured": false
+  },
+  "unauthorized_http": 401,
+  "ask_http": 200,
+  "response": {
+    "question": "微信退款一般多久到账？",
+    "hits": [
+      {
+        "line_end": 9,
+        "chunk_id": "after_sales.md#chunk_005",
+        "file_type": ".md",
+        "line_start": 9,
+        "source": "after_sales.md",
+        "text": "仓库验收通过后，退款会在 1 个工作日内发起并原路退回。支付宝和微信通常在 1 至 3 个工作日到账；银行卡通常在 3 至 7 个工作日到账，实际时间受支付机构和银行处理进度影响。",
+        "score": 0.03278688524590164,
+        "method": "hybrid",
+        "vector_rank": 1,
+        "bm25_rank": 1,
+        "vector_score": 0.752
+      },
+      {
+        "source": "after_sales.md",
+        "line_start": 7,
+        "file_type": ".md",
+        "chunk_id": "after_sales.md#chunk_004",
+        "line_end": 7,
+        "text": "## 退款时效",
+        "score": 0.03200204813108039,
+        "method": "hybrid",
+        "vector_rank": 2,
+        "bm25_rank": 3,
+        "vector_score": 0.6795
+      },
+      {
+        "line_end": 11,
+        "chunk_id": "after_sales.md#chunk_006",
+        "file_type": ".md",
+        "line_start": 11,
+        "source": "after_sales.md",
+        "text": "知识库只能说明一般退款规则，不能判断某一个订单的实际到账日期。查询具体订单需要调用订单系统；订单状态异常或超过上述时效时应转人工客服。",
+        "score": 0.03200204813108039,
+        "method": "hybrid",
+        "vector_rank": 3,
+        "bm25_rank": 2,
+        "vector_score": 0.6722
+      }
+    ],
+    "answer": "未配置模型，仅展示真实检索证据。",
+    "status": "evidence_only",
+    "trace": [
+      {
+        "node": "retrieve",
+        "elapsed_ms": 277.95,
+        "mode": "hybrid"
+      },
+      {
+        "node": "gate",
+        "status": "ready"
+      },
+      {
+        "node": "generate",
+        "status": "evidence_only"
+      },
+      {
+        "node": "validate",
+        "status": "skipped"
+      }
+    ],
+    "citations": [],
+    "retrieval_mode": "hybrid",
+    "request_id": "4180b9ae5a474229ae40e4f434659c6e",
+    "elapsed_ms": 282.65
+  },
+  "tests": "31/31 regression tests passed in this image; no LLM key in container smoke",
+  "model_source": "Read-only bind mount of the real BGE-small-zh-v1.5 cache; not a fake embedding"
+}
