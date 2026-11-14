@@ -1,0 +1,12 @@
+.git
+.env
+.env.*
+!.env.example
+__pycache__
+**/__pycache__
+*.pyc
+.venv
+chroma_db
+var
+examples
+evals/*results*

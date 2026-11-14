@@ -1,0 +1,10 @@
+# Direct dependencies pinned to the locally verified environment.
+openai==3.31.0
+python-dotenv==1.2.4
+numpy==2.5.4
+chromadb==1.5.9
+sentence-transformers==5.7.0
+langgraph==1.2.19
+fastapi==0.143.1
+uvicorn==0.54.0
+httpx==0.28.1

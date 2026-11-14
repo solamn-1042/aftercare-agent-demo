@@ -1,0 +1,35 @@
+name: verify
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cpu
+      - run: pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -v
+  container:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t aftercare:ci .
+      - name: Build real embedding index and validate HTTP
+        run: |
+          docker volume create aftercare-ci
+          docker run --rm -v aftercare-ci:/data aftercare:ci python -m service.index
+          docker run -d --name aftercare-ci -p 8000:8000 -v aftercare-ci:/data -e API_TOKEN=ci-only-token-with-at-least-24-characters aftercare:ci
+          for n in $(seq 1 90); do curl -fsS http://localhost:8000/health/ready && break; sleep 2; done
+          curl -fsS http://localhost:8000/health/ready
+          curl -fsS http://localhost:8000/v1/ask -H 'Authorization: Bearer ci-only-token-with-at-least-24-characters' -H 'Content-Type: application/json' -d '{"question":"退款一般多久到账？"}' > response.json
+          python -c "import json; d=json.load(open('response.json')); assert d['status']=='evidence_only' and len(d['hits'])>0, d"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: container-response
+          path: response.json

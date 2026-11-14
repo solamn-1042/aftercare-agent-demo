@@ -1,0 +1,1349 @@
+{
+  "at_utc": "2026-11-14T07:38:42.472349+00:00",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "embedding": "BAAI/bge-small-zh-v1.5",
+  "warmup_ms": 9608.779900008813,
+  "chunks": 14,
+  "corpus_fingerprint": "216b75a1f100",
+  "cases_sha256": "110f907974823f3abe7ddf052b0fa585652c600416fed1403437581d84efe36f",
+  "limitations": "Self-authored synthetic shop: 40 policy, 10 order, 10 negative cases. No production accuracy claim. Warmup excluded.",
+  "summary": {
+    "vector": {
+      "n": 40,
+      "hits": 40,
+      "hit_at_3": 1,
+      "mean_ms": 10.970425,
+      "p95_ms": 12.557
+    },
+    "bm25": {
+      "n": 40,
+      "hits": 40,
+      "hit_at_3": 1,
+      "mean_ms": 0.51785,
+      "p95_ms": 0.631
+    },
+    "hybrid": {
+      "n": 40,
+      "hits": 40,
+      "hit_at_3": 1,
+      "mean_ms": 11.969675,
+      "p95_ms": 14.088
+    }
+  },
+  "records": [
+    {
+      "id": "P01",
+      "method": "vector",
+      "hit": true,
+      "ms": 10.972,
+      "chunk_ids": [
+        "after_sales.md#chunk_003",
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_002"
+      ]
+    },
+    {
+      "id": "P01",
+      "method": "bm25",
+      "hit": true,
+      "ms": 2.929,
+      "chunk_ids": [
+        "after_sales.md#chunk_003",
+        "after_sales.md#chunk_002",
+        "after_sales.md#chunk_010"
+      ]
+    },
+    {
+      "id": "P01",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 11.963,
+      "chunk_ids": [
+        "after_sales.md#chunk_003",
+        "after_sales.md#chunk_002",
+        "after_sales.md#chunk_008"
+      ]
+    },
+    {
+      "id": "P02",
+      "method": "vector",
+      "hit": true,
+      "ms": 10.444,
+      "chunk_ids": [
+        "after_sales.md#chunk_002",
+        "after_sales.md#chunk_004",
+        "after_sales.md#chunk_003"
+      ]
+    },
+    {
+      "id": "P02",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.501,
+      "chunk_ids": [
+        "after_sales.md#chunk_002",
+        "after_sales.md#chunk_003"
+      ]
+    },
+    {
+      "id": "P02",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 12.138,
+      "chunk_ids": [
+        "after_sales.md#chunk_002",
+        "after_sales.md#chunk_003",
+        "after_sales.md#chunk_004"
+      ]
+    },
+    {
+      "id": "P03",
+      "method": "vector",
+      "hit": true,
+      "ms": 11.889,
+      "chunk_ids": [
+        "after_sales.md#chunk_003",
+        "after_sales.md#chunk_002",
+        "after_sales.md#chunk_008"
+      ]
+    },
+    {
+      "id": "P03",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.372,
+      "chunk_ids": [
+        "after_sales.md#chunk_003",
+        "after_sales.md#chunk_002",
+        "after_sales.md#chunk_012"
+      ]
+    },
+    {
+      "id": "P03",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 12.255,
+      "chunk_ids": [
+        "after_sales.md#chunk_003",
+        "after_sales.md#chunk_002",
+        "after_sales.md#chunk_008"
+      ]
+    },
+    {
+      "id": "P04",
+      "method": "vector",
+      "hit": true,
+      "ms": 9.214,
+      "chunk_ids": [
+        "after_sales.md#chunk_003",
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_002"
+      ]
+    },
+    {
+      "id": "P04",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.457,
+      "chunk_ids": [
+        "after_sales.md#chunk_003",
+        "after_sales.md#chunk_002"
+      ]
+    },
+    {
+      "id": "P04",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 11.206,
+      "chunk_ids": [
+        "after_sales.md#chunk_003",
+        "after_sales.md#chunk_002",
+        "after_sales.md#chunk_008"
+      ]
+    },
+    {
+      "id": "P05",
+      "method": "vector",
+      "hit": true,
+      "ms": 9.706,
+      "chunk_ids": [
+        "after_sales.md#chunk_003",
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_006"
+      ]
+    },
+    {
+      "id": "P05",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.501,
+      "chunk_ids": [
+        "after_sales.md#chunk_003",
+        "after_sales.md#chunk_002",
+        "after_sales.md#chunk_005"
+      ]
+    },
+    {
+      "id": "P05",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 13.435,
+      "chunk_ids": [
+        "after_sales.md#chunk_003",
+        "after_sales.md#chunk_002",
+        "after_sales.md#chunk_008"
+      ]
+    },
+    {
+      "id": "P06",
+      "method": "vector",
+      "hit": true,
+      "ms": 10.711,
+      "chunk_ids": [
+        "after_sales.md#chunk_003",
+        "after_sales.md#chunk_002",
+        "after_sales.md#chunk_004"
+      ]
+    },
+    {
+      "id": "P06",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.354,
+      "chunk_ids": [
+        "after_sales.md#chunk_003",
+        "after_sales.md#chunk_010",
+        "after_sales.md#chunk_008"
+      ]
+    },
+    {
+      "id": "P06",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 11.015,
+      "chunk_ids": [
+        "after_sales.md#chunk_003",
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_010"
+      ]
+    },
+    {
+      "id": "P07",
+      "method": "vector",
+      "hit": true,
+      "ms": 11.794,
+      "chunk_ids": [
+        "after_sales.md#chunk_003",
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_002"
+      ]
+    },
+    {
+      "id": "P07",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.314,
+      "chunk_ids": [
+        "after_sales.md#chunk_003",
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_010"
+      ]
+    },
+    {
+      "id": "P07",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 11.035,
+      "chunk_ids": [
+        "after_sales.md#chunk_003",
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_010"
+      ]
+    },
+    {
+      "id": "P08",
+      "method": "vector",
+      "hit": true,
+      "ms": 10.235,
+      "chunk_ids": [
+        "after_sales.md#chunk_003",
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_002"
+      ]
+    },
+    {
+      "id": "P08",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.328,
+      "chunk_ids": [
+        "after_sales.md#chunk_003",
+        "after_sales.md#chunk_002",
+        "after_sales.md#chunk_006"
+      ]
+    },
+    {
+      "id": "P08",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 10.313,
+      "chunk_ids": [
+        "after_sales.md#chunk_003",
+        "after_sales.md#chunk_002",
+        "after_sales.md#chunk_006"
+      ]
+    },
+    {
+      "id": "P09",
+      "method": "vector",
+      "hit": true,
+      "ms": 11.102,
+      "chunk_ids": [
+        "after_sales.md#chunk_005",
+        "after_sales.md#chunk_006",
+        "after_sales.md#chunk_004"
+      ]
+    },
+    {
+      "id": "P09",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.497,
+      "chunk_ids": [
+        "after_sales.md#chunk_005",
+        "after_sales.md#chunk_004",
+        "after_sales.md#chunk_008"
+      ]
+    },
+    {
+      "id": "P09",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 13.35,
+      "chunk_ids": [
+        "after_sales.md#chunk_005",
+        "after_sales.md#chunk_004",
+        "after_sales.md#chunk_006"
+      ]
+    },
+    {
+      "id": "P10",
+      "method": "vector",
+      "hit": true,
+      "ms": 12.155,
+      "chunk_ids": [
+        "after_sales.md#chunk_004",
+        "after_sales.md#chunk_005",
+        "after_sales.md#chunk_002"
+      ]
+    },
+    {
+      "id": "P10",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.631,
+      "chunk_ids": [
+        "after_sales.md#chunk_005",
+        "after_sales.md#chunk_004",
+        "after_sales.md#chunk_014"
+      ]
+    },
+    {
+      "id": "P10",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 13.413,
+      "chunk_ids": [
+        "after_sales.md#chunk_004",
+        "after_sales.md#chunk_005",
+        "after_sales.md#chunk_006"
+      ]
+    },
+    {
+      "id": "P11",
+      "method": "vector",
+      "hit": true,
+      "ms": 11.869,
+      "chunk_ids": [
+        "after_sales.md#chunk_005",
+        "after_sales.md#chunk_004",
+        "after_sales.md#chunk_006"
+      ]
+    },
+    {
+      "id": "P11",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.415,
+      "chunk_ids": [
+        "after_sales.md#chunk_005",
+        "after_sales.md#chunk_006",
+        "after_sales.md#chunk_004"
+      ]
+    },
+    {
+      "id": "P11",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 13.32,
+      "chunk_ids": [
+        "after_sales.md#chunk_005",
+        "after_sales.md#chunk_004",
+        "after_sales.md#chunk_006"
+      ]
+    },
+    {
+      "id": "P12",
+      "method": "vector",
+      "hit": true,
+      "ms": 9.601,
+      "chunk_ids": [
+        "after_sales.md#chunk_005",
+        "after_sales.md#chunk_004",
+        "after_sales.md#chunk_006"
+      ]
+    },
+    {
+      "id": "P12",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.413,
+      "chunk_ids": [
+        "after_sales.md#chunk_005",
+        "after_sales.md#chunk_004",
+        "after_sales.md#chunk_006"
+      ]
+    },
+    {
+      "id": "P12",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 9.609,
+      "chunk_ids": [
+        "after_sales.md#chunk_005",
+        "after_sales.md#chunk_004",
+        "after_sales.md#chunk_006"
+      ]
+    },
+    {
+      "id": "P13",
+      "method": "vector",
+      "hit": true,
+      "ms": 9.632,
+      "chunk_ids": [
+        "after_sales.md#chunk_005",
+        "after_sales.md#chunk_004",
+        "after_sales.md#chunk_006"
+      ]
+    },
+    {
+      "id": "P13",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.468,
+      "chunk_ids": [
+        "after_sales.md#chunk_005",
+        "after_sales.md#chunk_004",
+        "after_sales.md#chunk_006"
+      ]
+    },
+    {
+      "id": "P13",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 11.055,
+      "chunk_ids": [
+        "after_sales.md#chunk_005",
+        "after_sales.md#chunk_004",
+        "after_sales.md#chunk_006"
+      ]
+    },
+    {
+      "id": "P14",
+      "method": "vector",
+      "hit": true,
+      "ms": 9.697,
+      "chunk_ids": [
+        "after_sales.md#chunk_004",
+        "after_sales.md#chunk_005",
+        "after_sales.md#chunk_006"
+      ]
+    },
+    {
+      "id": "P14",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.446,
+      "chunk_ids": [
+        "after_sales.md#chunk_004",
+        "after_sales.md#chunk_005",
+        "after_sales.md#chunk_003"
+      ]
+    },
+    {
+      "id": "P14",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 11.124,
+      "chunk_ids": [
+        "after_sales.md#chunk_004",
+        "after_sales.md#chunk_005",
+        "after_sales.md#chunk_003"
+      ]
+    },
+    {
+      "id": "P15",
+      "method": "vector",
+      "hit": true,
+      "ms": 9.751,
+      "chunk_ids": [
+        "after_sales.md#chunk_006",
+        "after_sales.md#chunk_005",
+        "after_sales.md#chunk_010"
+      ]
+    },
+    {
+      "id": "P15",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.476,
+      "chunk_ids": [
+        "after_sales.md#chunk_006",
+        "after_sales.md#chunk_005",
+        "after_sales.md#chunk_012"
+      ]
+    },
+    {
+      "id": "P15",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 12.378,
+      "chunk_ids": [
+        "after_sales.md#chunk_006",
+        "after_sales.md#chunk_005",
+        "after_sales.md#chunk_012"
+      ]
+    },
+    {
+      "id": "P16",
+      "method": "vector",
+      "hit": true,
+      "ms": 10.806,
+      "chunk_ids": [
+        "after_sales.md#chunk_004",
+        "after_sales.md#chunk_006",
+        "after_sales.md#chunk_005"
+      ]
+    },
+    {
+      "id": "P16",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.474,
+      "chunk_ids": [
+        "after_sales.md#chunk_006",
+        "after_sales.md#chunk_004",
+        "after_sales.md#chunk_010"
+      ]
+    },
+    {
+      "id": "P16",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 11.097,
+      "chunk_ids": [
+        "after_sales.md#chunk_004",
+        "after_sales.md#chunk_006",
+        "after_sales.md#chunk_005"
+      ]
+    },
+    {
+      "id": "P17",
+      "method": "vector",
+      "hit": true,
+      "ms": 10.583,
+      "chunk_ids": [
+        "after_sales.md#chunk_007",
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_014"
+      ]
+    },
+    {
+      "id": "P17",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.495,
+      "chunk_ids": [
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_007",
+        "after_sales.md#chunk_013"
+      ]
+    },
+    {
+      "id": "P17",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 10.466,
+      "chunk_ids": [
+        "after_sales.md#chunk_007",
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_014"
+      ]
+    },
+    {
+      "id": "P18",
+      "method": "vector",
+      "hit": true,
+      "ms": 9.589,
+      "chunk_ids": [
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_001",
+        "after_sales.md#chunk_007"
+      ]
+    },
+    {
+      "id": "P18",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.385,
+      "chunk_ids": [
+        "after_sales.md#chunk_001",
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_007"
+      ]
+    },
+    {
+      "id": "P18",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 12.051,
+      "chunk_ids": [
+        "after_sales.md#chunk_001",
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_007"
+      ]
+    },
+    {
+      "id": "P19",
+      "method": "vector",
+      "hit": true,
+      "ms": 12.184,
+      "chunk_ids": [
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_007",
+        "after_sales.md#chunk_012"
+      ]
+    },
+    {
+      "id": "P19",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.539,
+      "chunk_ids": [
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_007",
+        "after_sales.md#chunk_003"
+      ]
+    },
+    {
+      "id": "P19",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 13.095,
+      "chunk_ids": [
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_007",
+        "after_sales.md#chunk_003"
+      ]
+    },
+    {
+      "id": "P20",
+      "method": "vector",
+      "hit": true,
+      "ms": 9.9,
+      "chunk_ids": [
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_007",
+        "after_sales.md#chunk_012"
+      ]
+    },
+    {
+      "id": "P20",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.525,
+      "chunk_ids": [
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_007",
+        "after_sales.md#chunk_003"
+      ]
+    },
+    {
+      "id": "P20",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 13.535,
+      "chunk_ids": [
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_007",
+        "after_sales.md#chunk_003"
+      ]
+    },
+    {
+      "id": "P21",
+      "method": "vector",
+      "hit": true,
+      "ms": 10.443,
+      "chunk_ids": [
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_003",
+        "after_sales.md#chunk_007"
+      ]
+    },
+    {
+      "id": "P21",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.545,
+      "chunk_ids": [
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_007",
+        "after_sales.md#chunk_003"
+      ]
+    },
+    {
+      "id": "P21",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 12.739,
+      "chunk_ids": [
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_003",
+        "after_sales.md#chunk_007"
+      ]
+    },
+    {
+      "id": "P22",
+      "method": "vector",
+      "hit": true,
+      "ms": 13.515,
+      "chunk_ids": [
+        "after_sales.md#chunk_007",
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_014"
+      ]
+    },
+    {
+      "id": "P22",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.514,
+      "chunk_ids": [
+        "after_sales.md#chunk_007",
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_012"
+      ]
+    },
+    {
+      "id": "P22",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 13.107,
+      "chunk_ids": [
+        "after_sales.md#chunk_007",
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_014"
+      ]
+    },
+    {
+      "id": "P23",
+      "method": "vector",
+      "hit": true,
+      "ms": 10.44,
+      "chunk_ids": [
+        "after_sales.md#chunk_007",
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_012"
+      ]
+    },
+    {
+      "id": "P23",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.505,
+      "chunk_ids": [
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_007",
+        "after_sales.md#chunk_001"
+      ]
+    },
+    {
+      "id": "P23",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 14.151,
+      "chunk_ids": [
+        "after_sales.md#chunk_007",
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_001"
+      ]
+    },
+    {
+      "id": "P24",
+      "method": "vector",
+      "hit": true,
+      "ms": 10.432,
+      "chunk_ids": [
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_007",
+        "after_sales.md#chunk_014"
+      ]
+    },
+    {
+      "id": "P24",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.367,
+      "chunk_ids": [
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_007",
+        "after_sales.md#chunk_012"
+      ]
+    },
+    {
+      "id": "P24",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 13.282,
+      "chunk_ids": [
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_007",
+        "after_sales.md#chunk_012"
+      ]
+    },
+    {
+      "id": "P25",
+      "method": "vector",
+      "hit": true,
+      "ms": 12.557,
+      "chunk_ids": [
+        "after_sales.md#chunk_010",
+        "after_sales.md#chunk_005",
+        "after_sales.md#chunk_006"
+      ]
+    },
+    {
+      "id": "P25",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.534,
+      "chunk_ids": [
+        "after_sales.md#chunk_010",
+        "after_sales.md#chunk_005"
+      ]
+    },
+    {
+      "id": "P25",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 14.088,
+      "chunk_ids": [
+        "after_sales.md#chunk_010",
+        "after_sales.md#chunk_005",
+        "after_sales.md#chunk_006"
+      ]
+    },
+    {
+      "id": "P26",
+      "method": "vector",
+      "hit": true,
+      "ms": 12.31,
+      "chunk_ids": [
+        "after_sales.md#chunk_010",
+        "after_sales.md#chunk_012",
+        "after_sales.md#chunk_006"
+      ]
+    },
+    {
+      "id": "P26",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.547,
+      "chunk_ids": [
+        "after_sales.md#chunk_010",
+        "after_sales.md#chunk_009",
+        "after_sales.md#chunk_012"
+      ]
+    },
+    {
+      "id": "P26",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 13.911,
+      "chunk_ids": [
+        "after_sales.md#chunk_010",
+        "after_sales.md#chunk_012",
+        "after_sales.md#chunk_009"
+      ]
+    },
+    {
+      "id": "P27",
+      "method": "vector",
+      "hit": true,
+      "ms": 13.564,
+      "chunk_ids": [
+        "after_sales.md#chunk_010",
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_003"
+      ]
+    },
+    {
+      "id": "P27",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.372,
+      "chunk_ids": [
+        "after_sales.md#chunk_010",
+        "after_sales.md#chunk_009",
+        "after_sales.md#chunk_003"
+      ]
+    },
+    {
+      "id": "P27",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 13.679,
+      "chunk_ids": [
+        "after_sales.md#chunk_010",
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_009"
+      ]
+    },
+    {
+      "id": "P28",
+      "method": "vector",
+      "hit": true,
+      "ms": 12.143,
+      "chunk_ids": [
+        "after_sales.md#chunk_009",
+        "after_sales.md#chunk_010",
+        "after_sales.md#chunk_012"
+      ]
+    },
+    {
+      "id": "P28",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.34,
+      "chunk_ids": [
+        "after_sales.md#chunk_009",
+        "after_sales.md#chunk_011",
+        "after_sales.md#chunk_010"
+      ]
+    },
+    {
+      "id": "P28",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 9.992,
+      "chunk_ids": [
+        "after_sales.md#chunk_009",
+        "after_sales.md#chunk_010",
+        "after_sales.md#chunk_011"
+      ]
+    },
+    {
+      "id": "P29",
+      "method": "vector",
+      "hit": true,
+      "ms": 11.448,
+      "chunk_ids": [
+        "after_sales.md#chunk_010",
+        "after_sales.md#chunk_009",
+        "after_sales.md#chunk_003"
+      ]
+    },
+    {
+      "id": "P29",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.366,
+      "chunk_ids": [
+        "after_sales.md#chunk_010",
+        "after_sales.md#chunk_009",
+        "after_sales.md#chunk_012"
+      ]
+    },
+    {
+      "id": "P29",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 9.966,
+      "chunk_ids": [
+        "after_sales.md#chunk_010",
+        "after_sales.md#chunk_009",
+        "after_sales.md#chunk_003"
+      ]
+    },
+    {
+      "id": "P30",
+      "method": "vector",
+      "hit": true,
+      "ms": 10.246,
+      "chunk_ids": [
+        "after_sales.md#chunk_010",
+        "after_sales.md#chunk_009",
+        "after_sales.md#chunk_014"
+      ]
+    },
+    {
+      "id": "P30",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.353,
+      "chunk_ids": [
+        "after_sales.md#chunk_009",
+        "after_sales.md#chunk_010",
+        "after_sales.md#chunk_012"
+      ]
+    },
+    {
+      "id": "P30",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 10.137,
+      "chunk_ids": [
+        "after_sales.md#chunk_009",
+        "after_sales.md#chunk_010",
+        "after_sales.md#chunk_012"
+      ]
+    },
+    {
+      "id": "P31",
+      "method": "vector",
+      "hit": true,
+      "ms": 12.401,
+      "chunk_ids": [
+        "after_sales.md#chunk_010",
+        "after_sales.md#chunk_006",
+        "after_sales.md#chunk_005"
+      ]
+    },
+    {
+      "id": "P31",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.831,
+      "chunk_ids": [
+        "after_sales.md#chunk_009",
+        "after_sales.md#chunk_010"
+      ]
+    },
+    {
+      "id": "P31",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 14.725,
+      "chunk_ids": [
+        "after_sales.md#chunk_010",
+        "after_sales.md#chunk_009",
+        "after_sales.md#chunk_006"
+      ]
+    },
+    {
+      "id": "P32",
+      "method": "vector",
+      "hit": true,
+      "ms": 12.006,
+      "chunk_ids": [
+        "after_sales.md#chunk_010",
+        "after_sales.md#chunk_009",
+        "after_sales.md#chunk_012"
+      ]
+    },
+    {
+      "id": "P32",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.37,
+      "chunk_ids": [
+        "after_sales.md#chunk_010",
+        "after_sales.md#chunk_009",
+        "after_sales.md#chunk_006"
+      ]
+    },
+    {
+      "id": "P32",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 10.186,
+      "chunk_ids": [
+        "after_sales.md#chunk_010",
+        "after_sales.md#chunk_009",
+        "after_sales.md#chunk_012"
+      ]
+    },
+    {
+      "id": "P33",
+      "method": "vector",
+      "hit": true,
+      "ms": 10.604,
+      "chunk_ids": [
+        "after_sales.md#chunk_012",
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_007"
+      ]
+    },
+    {
+      "id": "P33",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.468,
+      "chunk_ids": [
+        "after_sales.md#chunk_012",
+        "after_sales.md#chunk_005"
+      ]
+    },
+    {
+      "id": "P33",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 13.122,
+      "chunk_ids": [
+        "after_sales.md#chunk_012",
+        "after_sales.md#chunk_005",
+        "after_sales.md#chunk_008"
+      ]
+    },
+    {
+      "id": "P34",
+      "method": "vector",
+      "hit": true,
+      "ms": 11.251,
+      "chunk_ids": [
+        "after_sales.md#chunk_012",
+        "after_sales.md#chunk_008",
+        "after_sales.md#chunk_007"
+      ]
+    },
+    {
+      "id": "P34",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.5,
+      "chunk_ids": [
+        "after_sales.md#chunk_012",
+        "after_sales.md#chunk_005"
+      ]
+    },
+    {
+      "id": "P34",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 11.246,
+      "chunk_ids": [
+        "after_sales.md#chunk_012",
+        "after_sales.md#chunk_005",
+        "after_sales.md#chunk_008"
+      ]
+    },
+    {
+      "id": "P35",
+      "method": "vector",
+      "hit": true,
+      "ms": 10.833,
+      "chunk_ids": [
+        "after_sales.md#chunk_012",
+        "after_sales.md#chunk_011",
+        "after_sales.md#chunk_001"
+      ]
+    },
+    {
+      "id": "P35",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.366,
+      "chunk_ids": [
+        "after_sales.md#chunk_012",
+        "after_sales.md#chunk_011"
+      ]
+    },
+    {
+      "id": "P35",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 10.029,
+      "chunk_ids": [
+        "after_sales.md#chunk_012",
+        "after_sales.md#chunk_011",
+        "after_sales.md#chunk_001"
+      ]
+    },
+    {
+      "id": "P36",
+      "method": "vector",
+      "hit": true,
+      "ms": 10.174,
+      "chunk_ids": [
+        "after_sales.md#chunk_012",
+        "after_sales.md#chunk_006",
+        "after_sales.md#chunk_008"
+      ]
+    },
+    {
+      "id": "P36",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.364,
+      "chunk_ids": [
+        "after_sales.md#chunk_012",
+        "after_sales.md#chunk_006",
+        "after_sales.md#chunk_009"
+      ]
+    },
+    {
+      "id": "P36",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 12.004,
+      "chunk_ids": [
+        "after_sales.md#chunk_012",
+        "after_sales.md#chunk_006",
+        "after_sales.md#chunk_009"
+      ]
+    },
+    {
+      "id": "P37",
+      "method": "vector",
+      "hit": true,
+      "ms": 9.214,
+      "chunk_ids": [
+        "after_sales.md#chunk_012",
+        "after_sales.md#chunk_006",
+        "after_sales.md#chunk_008"
+      ]
+    },
+    {
+      "id": "P37",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.425,
+      "chunk_ids": [
+        "after_sales.md#chunk_012",
+        "after_sales.md#chunk_006",
+        "after_sales.md#chunk_007"
+      ]
+    },
+    {
+      "id": "P37",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 11.125,
+      "chunk_ids": [
+        "after_sales.md#chunk_012",
+        "after_sales.md#chunk_006",
+        "after_sales.md#chunk_007"
+      ]
+    },
+    {
+      "id": "P38",
+      "method": "vector",
+      "hit": true,
+      "ms": 12.282,
+      "chunk_ids": [
+        "after_sales.md#chunk_012",
+        "after_sales.md#chunk_006",
+        "after_sales.md#chunk_010"
+      ]
+    },
+    {
+      "id": "P38",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.63,
+      "chunk_ids": [
+        "after_sales.md#chunk_012",
+        "after_sales.md#chunk_006",
+        "after_sales.md#chunk_014"
+      ]
+    },
+    {
+      "id": "P38",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 10.714,
+      "chunk_ids": [
+        "after_sales.md#chunk_012",
+        "after_sales.md#chunk_006",
+        "after_sales.md#chunk_010"
+      ]
+    },
+    {
+      "id": "P39",
+      "method": "vector",
+      "hit": true,
+      "ms": 10.2,
+      "chunk_ids": [
+        "after_sales.md#chunk_014",
+        "after_sales.md#chunk_013",
+        "after_sales.md#chunk_010"
+      ]
+    },
+    {
+      "id": "P39",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.348,
+      "chunk_ids": [
+        "after_sales.md#chunk_014",
+        "after_sales.md#chunk_013",
+        "after_sales.md#chunk_007"
+      ]
+    },
+    {
+      "id": "P39",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 11.755,
+      "chunk_ids": [
+        "after_sales.md#chunk_014",
+        "after_sales.md#chunk_013",
+        "after_sales.md#chunk_006"
+      ]
+    },
+    {
+      "id": "P40",
+      "method": "vector",
+      "hit": true,
+      "ms": 10.92,
+      "chunk_ids": [
+        "after_sales.md#chunk_013",
+        "after_sales.md#chunk_014",
+        "after_sales.md#chunk_008"
+      ]
+    },
+    {
+      "id": "P40",
+      "method": "bm25",
+      "hit": true,
+      "ms": 0.449,
+      "chunk_ids": [
+        "after_sales.md#chunk_013",
+        "after_sales.md#chunk_014",
+        "after_sales.md#chunk_007"
+      ]
+    },
+    {
+      "id": "P40",
+      "method": "hybrid",
+      "hit": true,
+      "ms": 10.976,
+      "chunk_ids": [
+        "after_sales.md#chunk_013",
+        "after_sales.md#chunk_014",
+        "after_sales.md#chunk_007"
+      ]
+    }
+  ]
+}
